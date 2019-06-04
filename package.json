@@ -1,0 +1,14 @@
+{
+  "name": "shoppinglist_electron",
+  "version": "1.0.0",
+  "description": "A simple electron application ",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Rahul Gupta",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^5.0.2"
+  }
+}
