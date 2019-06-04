@@ -4,11 +4,15 @@
   "description": "A simple electron application ",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns  --prune=true --out=release-builds",
+    "package-win": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=win32 --icon=assets/icons/win/icon.ico --arch=ia32  --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"ShoppingList\"",
+    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/icon.png  --prune=true --out=release-builds"
   },
   "author": "Rahul Gupta",
   "license": "MIT",
   "dependencies": {
-    "electron": "^5.0.2"
+    "electron": "^5.0.2",
+    "electron-packager": "^13.1.1"
   }
 }
